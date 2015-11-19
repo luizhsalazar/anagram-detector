@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sentence:</strong>
+  <%= @anagram.sentence %>
+</p>
+
+<p>
+  <strong>Is anagram:</strong>
+  <%= @anagram.is_anagram %>
+</p>
+
+<%= link_to 'Edit', edit_anagram_path(@anagram) %> |
+<%= link_to 'Back', anagrams_path %>
