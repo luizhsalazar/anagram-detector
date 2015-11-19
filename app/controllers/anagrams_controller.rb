@@ -7,6 +7,10 @@ class AnagramsController < ApplicationController
     @anagrams = Anagram.all
   end
 
+  def is_anagram
+
+  end
+
   # POST /anagrams
   # POST /anagrams.json
   def create
