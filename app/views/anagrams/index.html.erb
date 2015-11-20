@@ -1,17 +1,25 @@
-<%= form_for Anagram.new do |f| %>
+<%= form_for @anagram do |f| %>
     <div class="panel panel-default">
       <div class="panel-heading"><strong> Check Anagram </strong>  </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-lg-12">
-            <div class="form-group" align="left">
-              <%= f.label :Insert_your_anagram %><br>
+            <div class="form-group">
+              <b> Word/Sentence 1:</b>
               <%= f.text_field :sentence, class: "form-control" %>
             </div>
 
-            <%= button_tag( :class => "btn btn-primary btn-lg") do %>
-                Check <span class="glyphicon glyphicon-search"></span>
-            <% end %>
+            <b> Word/Sentence 2:</b>
+            <div class="form-group" align="center">
+              <%= f.text_field :sentence2, class: "form-control" %>
+            </div>
+
+            <div align="center">
+              <%= button_tag(:class => "btn btn-primary btn-lg") do %>
+                  Check <span class="glyphicon glyphicon-ok"></span>
+              <% end %>
+            </div>
+
           </div>
         </div>
       </div>
