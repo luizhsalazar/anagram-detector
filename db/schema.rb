@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151119154825) do
+ActiveRecord::Schema.define(version: 20151119180259) do
 
   create_table "anagrams", force: :cascade do |t|
-    t.text     "sentence"
-    t.boolean  "is_anagram"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "sentence",   limit: 65535
+    t.boolean  "is_anagram", limit: 1
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "sentence2",  limit: 65535
   end
 
 end
