@@ -10,3 +10,5 @@ How it works
 It's very straightforward! In the first form field the user should type the word or sentence to be 
 checked against the other typed in the second field. Afterwards, click on "Check" button and the system
 will display whether is or not an anagram.
+
+The tool is deployed with Heroku and can be accessed via https://anagram-detector.herokuapp.com/.
