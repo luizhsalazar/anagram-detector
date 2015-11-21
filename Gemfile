@@ -22,7 +22,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'mysql2', '~> 0.3.19'
+group :development do
+  gem 'mysql2', '~> 0.3.19'
+end
+
+group :production do
+  gem 'pg', '~> 0.18.4'
+end
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
